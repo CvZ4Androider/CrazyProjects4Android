@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="48dp"
+    android:text="北京"
+    android:id="@android:id/text1"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:paddingLeft="10dp"
+    android:gravity="center_vertical">
+
+</TextView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dusk_theme_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_city"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/white"
+            android:dropDownVerticalOffset="48dp"
+            android:entries="@array/cities"
+            android:overlapAnchor="false"
+            android:popupBackground="@color/trans"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btn_add_city"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:text="添加城市"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/trans"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_weather"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        tools:src="@drawable/biz_plugin_weather_duoyun" />
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        tools:text="30℃" />
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:text="晴转多云（2023-5-22星期一）" />
+
+    <TextView
+        android:id="@+id/tv_temperature_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:text="14℃~27℃" />
+
+    <TextView
+        android:id="@+id/tv_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:text="西风  2级" />
+
+    <TextView
+        android:id="@+id/tv_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:text="空气指数：53  良" />
+
+    <TextView
+        android:id="@+id/tv_advice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:text="空气良好，建议适当开展户外活动" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv_future_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</LinearLayout>
